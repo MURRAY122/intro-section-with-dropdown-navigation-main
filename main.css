@@ -49,12 +49,10 @@ nav a{
 
 nav a:hover {
     color: var(--almost-black);
-    font-weight: 700;
 }
 
 nav button:hover {
     color: var(--almost-black);
-    font-weight: 700;
 }
 
 nav>*.nav__actions {
@@ -175,10 +173,6 @@ nav>*.nav__actions {
 margin-right: .5rem;
 }
 
-.arrow_change{
-    transform: rotate(180deg);
-}
-
 .dropdown:hover .dropdown-content{
     display: block;
 }
@@ -191,19 +185,19 @@ margin-right: .5rem;
 }
 
 .dropdown:hover .icon path {
-    fill: var(--almost-black);
+    stroke-width: 2px;
 }
 
 /* -------- Main Body -------- */
 main{
     margin: 0rem 4rem;
-    padding: 1rem;
+    padding: 3rem 1rem;
 }
 
 .grid {
     display: grid;
     grid-template-columns: 1fr auto;
-    gap: 1rem;
+    gap: 4rem;
 }
 
 @media screen and (max-width: 719px) {
@@ -213,6 +207,7 @@ main{
     }
     .grid{
         grid-template-columns: 1fr;
+        gap: 2rem;
     }
 
     picture{
@@ -224,32 +219,32 @@ main{
 .intro{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    max-width: 580px;
-    gap: 2rem;
+    justify-content: space-between;
+    padding: 1rem;
 }
 
 
 .intro__title{
-    font-size: 5.5rem;
+    font-size: 6.1rem;
     font-weight: 700;
     color: var(--almost-black);
-    margin: 3rem 0 0 0;
+    margin: 5rem 0 0 0;
 }
 
 .intro__desc{
     margin: 0;
-    max-width: 425px;
+    font-size: 27px;
 }
 
 .intro__btn{
-    width: 175px;
-    padding: .6rem;
+    width: 210px;
+    padding: 1.2rem;
     background-color: black;
     border-radius: 1rem;
     color: var(--almost-white);
     font-weight: 500;
     cursor: pointer;
+    font-size: var(--font-md);
 }
 
 
@@ -267,7 +262,6 @@ main{
 .clients{
     display: inline-flex;
     justify-content: space-between;
-    margin-top: auto;
 }
 
 /*  Section - Image  */
@@ -276,8 +270,7 @@ main{
 }
 
 img{
-    min-width: 520px;
-    max-height: 571px;
+    max-width: 520px;
 }
 
 @media screen and (max-width: 719px) {
@@ -296,6 +289,11 @@ img{
     .clients{
         gap: 2rem;
         padding: 1rem;
+    }
+
+    img{
+        min-width: 375px;
+        max-width: 100%;
     }
 
 }
