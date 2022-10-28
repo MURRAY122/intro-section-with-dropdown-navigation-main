@@ -260,8 +260,9 @@ main{
 }
 
 .clients{
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
+    padding: 1rem;
 }
 
 /*  Section - Image  */
@@ -281,14 +282,14 @@ img{
     .intro__title{
         margin: 2rem 0 0 0;
         font-size: 3rem;
+        text-align: center;
     }
 
     .intro__desc{
         text-align: center;
     }
     .clients{
-        gap: 2rem;
-        padding: 1rem;
+        gap: .5rem;
     }
 
     img{
